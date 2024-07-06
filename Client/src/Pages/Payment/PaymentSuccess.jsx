@@ -1,0 +1,25 @@
+import { Link, useSearchParams } from 'react-router-dom'
+import { AiOutlineFileDone } from 'react-icons/ai'
+import { Box, Button, Typography } from '@mui/material'
+import { payment } from '../../Assets/Images/Image'
+import './Payment.css'
+const PaymentSuccess = () => {
+    const searchParams = useSearchParams()[0]
+    const referenceNumber = searchParams.get('reference')
+    return (
+        <div className='main-payment-box'>
+            <Typography variant='h6' sx={{ marginTop: 1 }}>Payment Successful   <AiOutlineFileDone style={{ color: '#1976d2' }} /></Typography>
+            <Typography variant='body2'>Reference Number ={referenceNumber}</Typography>
+
+            <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div className="main-payment-card">
+                    <img src={payment} alt="payment" className="payment-img" />
+                    <Link style={{ color: 'white' }} to='/'><Button variant='contained' sx={{ borderRadius: 3 }} >Back To Home</Button></Link>
+                </div>
+            </Box>
+        </div >
+    )
+}
+
+
+export default PaymentSuccess
