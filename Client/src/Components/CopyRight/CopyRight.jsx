@@ -7,7 +7,7 @@ const CopyRight = (props) => {
         <Typography variant="body2" color="text.secondary" align="center" {...props} style={{ color: '#1976d2' }}>
             {'Copyright © '}
             <Link to='/' style={{ color: '#1976d2' }}>
-                Shop It
+                BANGLA BAZAAR
             </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
