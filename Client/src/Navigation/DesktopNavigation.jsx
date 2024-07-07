@@ -29,7 +29,7 @@ const DesktopNavigation = () => {
       <nav className='nav'>
         <div className="logo">
           <Link to='/'>
-            <span >Shop It</span>
+            <span >Bangla Bazaar</span>
           </Link>
         </div>
         <div className="nav-items">
